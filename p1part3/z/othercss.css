@@ -1,0 +1,76 @@
+/*=== ok ===*/
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+.col-1 img{
+	width: 25%;
+}
+
+.col-1{
+	background-color: sandybrown;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.col-2 {
+	float: left;
+	width: 160px;
+	margin: 0 15px;
+	background-color: #000;
+}
+
+li a{
+	color: brown;
+	font-family: cursive;
+	font-style: bold;
+	font-size: 2em;
+	text-decoration: none;
+	margin: 0 auto;
+	display: inline;
+}
+
+
+
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li{
+	float: right;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
