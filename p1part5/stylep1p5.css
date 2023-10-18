@@ -1,0 +1,155 @@
+/**
+ * GLOBAL STYLING
+ */
+
+/* box model fix */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ==========================================================================
+   Micro clearfix
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body{
+  background: peachpuff;
+}
+
+header .row {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+header ul {
+  list-style: none;
+  margin: 10px 0 0 150px;
+  padding: 0;
+}
+
+header li {
+  float: left;
+  margin-left: 18px;
+}
+
+header .added-margin {
+  margin-top: 10px;
+}
+
+
+
+header li a {
+  color: #66615a; /* brown */
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+header li a:hover {
+  color: red; 
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 1200px) {
+
+  header nav ul {
+    margin-left: 15px;
+  }
+
+/* top */
+
+#top .row {
+  margin-top: 85px;
+  border-bottom: 1px solid #f1eae0;
+  color: #67625e;
+}
+
+#top h2 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  line-height: 80%;
+}
+
+/* middle */
+
+#middle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#middle-header {
+  margin-bottom: 60px;
+}
+
+#middle-header p {
+  font-size: 150%;
+  line-height: 140%;
+}
+
+#middle h1 {
+  margin: 0;
+  padding: 0;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  font-size: 70px;
+  color: #66625b; /* dark clay */
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1;
+}
+
+#middle h2 {
+  color: #272121;
+}
+
+#middle-features p   {
+  text-align: left;
+}
+
+.middle-icons-adjustment-1 img {
+  padding-bottom: 30px;
+}
+
+.middle-icons-adjustment-2 img {
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+
+  #middle h2 {
+    font-size: 170%;
+  }
+
+  #middle-features p {
+    font-size: 140%;
+    text-align: center;
+  }
+
+  #middle h1 {
+    font-size: 410%;
+    padding-bottom: 3%;
+  }
+
+  #middle-features section {
+    padding-bottom: 50px;
+  }
+
+  #fish {
+    padding-bottom: 20px;
+  }
+
+}
+
+
