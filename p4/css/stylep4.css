@@ -1,0 +1,363 @@
+/* CSS Style sheet for project 4*/
+
+/*
+Brand colors:
+Primary: #521611
+Secondary: #A38C58
+Tertiary/font: #FFF1D5
+Other colours: #FFFFFF, #000000
+
+
+
+Font choices:
+H1: Heading, Roboto,  Light, 110px, 6.875em
+H2: Section Headings, Roboto,  Regular, 60px, 3.75em
+H3: Sub-heading, Roboto,  Light, 40px, 2.5em
+H4: Secondary sub-heading, Roboto,  Light, 32px, 2em
+H5: Header & footer, Roboto,  Regular, 16px, 1em
+H6: Testimonials user section, Roboto, Light Italic, 16px,1em ????
+P: Body, Roboto,  Light, 20px, 1.25em
+*/
+
+/* Global styling*/
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*box model fix*/
+html{
+	box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+/* clearfix*/
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+
+/* Global styling*/
+
+
+
+/*font styling h1 etc*/
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../Roboto/.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../Roboto.ttf");
+}
+
+body{
+	background-color: #FFF1D5;
+}
+
+h1{
+	font-family: Roboto-Thin;
+	font-size: 5.5em;
+	color: #FFF1D5;
+}
+
+h2{
+	font-family: Roboto-Regular;
+	font-size: 2.85em;
+	color: #FFF1D5;
+}
+
+h3{
+	font-family: Roboto-Light;
+	font-size: 2.17em;
+	color: #FFF1D5;
+}
+
+h4{
+	font-family: Roboto-Thin;
+	font-size: 1.85em;
+	color: #FFF1D5;
+}
+
+h5{
+	font-family: Roboto-Thin;
+	font-size: 0.95em;
+	color: #FFF1D5;
+	line-height: 0.7em;
+}
+
+#italic{
+	font-family: Roboto-ThinItalic;
+
+}
+
+h6{
+	font-family: Roboto-Regular;
+	font-size: 0.9em;
+	color: #FFF1D5;
+}
+
+p{
+	font-family: Roboto-Thin;
+	font-size: 1.1em;
+	color: #FFFFFF;
+}
+
+
+/*HEADER*/
+
+header{
+	background-color: #521611;
+	position: fixed;
+	height: 70px;
+	font-size: 1em;
+	font-family: roboto;
+
+
+}
+
+#logo{
+	width: 100px;
+	margin-top: 10px;
+}
+
+#contact {
+	width: 750px;
+
+}
+
+#socialmedia {
+	width: 130px;
+
+}
+
+header>.flexrow {
+	justify-content: space-between;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+  overflow: hidden;
+  color: #FFF1D5;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+#contact li{
+	padding-right: 15px;
+}
+
+#contact #bold{
+	font-family: Roboto-Bold;
+}
+
+div#socialmedia {
+	display: flex;
+}
+
+#socialmedia img{
+	padding: 5px;
+	margin-top: 10px;
+	max-height: 40px;
+}
+
+/*HERO SECTION*/
+
+#hero{
+	background-image: url("../images/hero.png");
+	background-size: cover;
+	height: 125vh;
+}
+
+#hero-chunk{
+	color: #521611;
+	text-align: center;
+	display: block;
+	padding-top: 300px;
+}
+
+#hero-chunk img{
+	width: 200px;
+	height: auto;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 12px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: Roboto-Light;
+  font-size: 1em;
+  color: #fff;
+}
+
+.button1 {
+  color: #FFF1D5; 
+  border: 1px solid #FFF1D5;
+}
+
+.button1:hover {
+  background-color: #626262;
+  color: white;
+}
+
+/*INTRO*/
+
+#intro{
+	background-color: #521611;
+	padding: 30px;
+}
+
+#intro h2{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#intro img{
+	width: 100%;
+	height: auto;
+}
+
+#intro col-4 col-5{
+	margin-top: 50px;
+}
+
+#intro h3{
+	margin-top: 190px;
+}
+
+/* OUR COMMITMENT SECTION*/
+
+#branding{
+	 display: block;
+   text-align: center;
+   margin-top: 30px;
+}
+
+#branding h4{
+	margin-top: 20px;
+	color: #000000;
+}
+
+#branding p{
+	text-align: left;
+	color: #000000;
+}
+
+#branding h2{
+	color: #000000;
+}
+
+/* beige icon section */
+
+#icons{
+	text-align: center;
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+	background-color: #A38C58;
+	padding-top: 30px;
+	padding-bottom: 30px;
+} 
+
+#icons img {
+	max-height: 100px;
+	margin-bottom: 20px;
+}
+
+#flex-reset{
+	display: flex;
+
+}
+
+/*our portfolio*/
+
+#portfolio{
+	background-color: #521611;
+	padding-top: 70px;
+	padding-bottom: 50px;
+}
+
+#center{
+	text-align: center;
+} 
+
+.imgduo img{
+	max-width: 40%;
+	padding: 10px 0px 0px 10px;
+}
+
+#spacing{
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+#lineup{
+	padding-top: 45px;
+}
+
+.flexrow{
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 12px;
+
+}
+
+.vertspace{
+	padding-left: 15px;
+	padding-top: 50px;
+}
+
+
+
+/*FOOTER*/
+
+#footer{
+	background-color: #A38C58;
+	padding-top: 60px;
+	float: left;
+}
+
+#imgsocial img{
+	max-height: 1.75em;
+	padding-right: 5px;
+}
+
+#middle{
+	text-align: center;
+	margin-top: 40px;
+}
+
+#footer h6{
+	line-height: 2.5em;
+	padding-top: 20px;
+}
+
+#bigger img{
+	max-height: 6em;
+}
+
+
